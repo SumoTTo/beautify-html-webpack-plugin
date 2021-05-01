@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Webpack 4 Outputting HTML complies with the reference standard 1`] = `
+"<!DOCTYPE html>
+<html lang=\\"en\\">
+
+<head>
+    <meta charset=\\"utf-8\\">
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">
+    <title>Test</title>
+</head>
+
+<body>
+    <div>
+        <p>Lorem
+
+        </p>
+
+    </div>
+</body>
+
+</html>"
+`;
+
+exports[`Webpack 5 Outputting HTML complies with the reference standard 1`] = `
+"<!DOCTYPE html>
+<html lang=\\"en\\">
+
+<head>
+    <meta charset=\\"utf-8\\">
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">
+    <title>Test</title>
+</head>
+
+<body>
+    <div>
+        <p>Lorem
+
+        </p>
+
+    </div>
+</body>
+
+</html>"
+`;

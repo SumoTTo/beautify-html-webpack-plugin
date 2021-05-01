@@ -1,0 +1,64 @@
+{
+	"name": "@sumotto/beautify-html-webpack-plugin",
+	"version": "0.0.0",
+	"description": "Webpack plugin for beautify HTML files (created using HTML Webpack Plugin) using JS Beautifier",
+	"keywords": [
+		"beautify",
+		"html",
+		"webpack",
+		"plugin"
+	],
+	"homepage": "https://github.com/SumoTTo/beautify-html-webpack-plugin#readme",
+	"bugs": {
+		"url": "https://github.com/SumoTTo/beautify-html-webpack-plugin/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SumoTTo/beautify-html-webpack-plugin.git"
+	},
+	"funding": "https://ko-fi.com/SumoTTo",
+	"license": "MIT",
+	"author": {
+		"name": "Sigalin Kirill",
+		"email": "sumotto@yandex.ru",
+		"url": "https://sumotto.ru"
+	},
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"scripts": {
+		"lint": "eslint {scripts,src,test}/**/*.js",
+		"fix": "eslint {scripts,src,test}/**/*.js --fix",
+		"test": "jest",
+		"build": "terser src/index.js -o index.js -c",
+		"prepare": "node scripts/prepare && husky install",
+		"prepublishOnly": "npm run build",
+		"releaseTests": "npm run lint && npm test",
+		"releasePreview": "cross-env HUSKY=0 np --preview --test-script=releaseTests",
+		"release": "cross-env HUSKY=0 np --test-script=releaseTests"
+	},
+	"dependencies": {
+		"js-beautify": "^1.0.0"
+	},
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "latest",
+		"cross-env": "latest",
+		"eslint": "latest",
+		"html-webpack-plugin-4": "npm:html-webpack-plugin@4",
+		"html-webpack-plugin-5": "npm:html-webpack-plugin@5",
+		"husky": "latest",
+		"jest": "latest",
+		"np": "latest",
+		"terser": "latest",
+		"webpack-4": "npm:webpack@4",
+		"webpack-5": "npm:webpack@5"
+	},
+	"peerDependencies": {
+		"html-webpack-plugin": ">=4.0.0 <6.0.0",
+		"webpack": ">=4.0.0 <6.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

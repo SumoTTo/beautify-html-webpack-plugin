@@ -1,0 +1,13 @@
+dist/
+node_modules/
+
+.DS_Store
+.idea
+.vscode
+
+*.log
+*.tgz
+
+Thumbs.db
+
+/index.js
