@@ -1,6 +1,6 @@
 {
 	"name": "@sumotto/beautify-html-webpack-plugin",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Webpack plugin for beautify HTML files (created using HTML Webpack Plugin) using JS Beautifier",
 	"keywords": [
 		"beautify",
